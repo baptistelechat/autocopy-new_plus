@@ -199,16 +199,4 @@ else {
 Write-Log "📝 Log complet disponible : $logFile"
 Write-Log " " # Ligne vide
 
-# Pause uniquement si le script est exécuté interactivement
-if ([Environment]::UserInteractive -and -not [Environment]::GetCommandLineArgs().Contains('-NonInteractive')) {
-  Write-Output "⏸️ Appuyez sur une touche pour fermer..."
-  try {
-    $null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
-  }
-  catch {
-    # Fallback si ReadKey n'est pas disponible
-    Read-Host "Appuyez sur Entrée pour continuer"
-  }
-}
-
 exit $exitCode

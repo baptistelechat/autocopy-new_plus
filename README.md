@@ -70,7 +70,6 @@ Exemple :
 
 ```
 12:30
-17:00
 ```
 
 **Note :** Ces horaires s'ajoutent au déclenchement automatique à la connexion utilisateur. Penser à reancer `install-schedule.ps1` pour appliquer les changements.
@@ -125,10 +124,10 @@ Fichier : `update-models.log`
 Exemple :
 
 ```
-[2025-09-12 10:32:01] 🔄 Début de la mise à jour des modèles PowerToys...
-[2025-09-12 10:32:01] ✅ Copié : template1.docx
-[2025-09-12 10:32:01] ⏭️ Ignoré (extension bannie) : plan.bak
-[2025-09-12 10:32:01] 🎉 Mise à jour terminée.
+[2025-09-12 12:30:01] 🔄 Début de la mise à jour des modèles PowerToys...
+[2025-09-12 12:30:01] ✅ Copié : template1.docx
+[2025-09-12 12:30:01] ⏭️ Ignoré (extension bannie) : plan.bak
+[2025-09-12 12:30:01] 🎉 Mise à jour terminée.
 ```
 
 ---

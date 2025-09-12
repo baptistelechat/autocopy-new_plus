@@ -91,7 +91,7 @@ if (-not $pwshPath) {
   $pwshPath = "C:\Program Files\PowerShell\7\pwsh.exe"
 }
 
-$action = New-ScheduledTaskAction -Execute $pwshPath -Argument "-ExecutionPolicy Bypass -NoExit -File `"$mainScript`""
+$action = New-ScheduledTaskAction -Execute $pwshPath -Argument "-ExecutionPolicy Bypass -File `"$mainScript`""
 
 # --- PRINCIPAL UTILISATEUR COURANT (MODE NORMAL) ---
 $userId = "$env:USERDOMAIN\$env:USERNAME"
