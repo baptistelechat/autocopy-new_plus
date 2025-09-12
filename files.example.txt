@@ -1,0 +1,3 @@
+\\MONSERVEUR\partage\modele1.docx
+\\MONSERVEUR\partage\DossierModeles
+\\MONSERVEUR\partage\DossierModeles\*
