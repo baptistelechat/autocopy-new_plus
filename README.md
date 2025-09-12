@@ -79,12 +79,17 @@ Exemple :
 ## 🚀 Installation
 
 1. Configurez `update-models.ps1`, `files.txt` et `banlist.txt`.
-2. Double-cliquez sur `install-schedule.ps1`.
+2. **Installez la tâche planifiée** :
+   - **Option A** : Double-cliquez sur `install-schedule.ps1`
+   - **Option B** : Exécutez en PowerShell :
+     ```powershell
+     powershell -ExecutionPolicy Bypass -File "<CHEMIN_VERS_LE_DOSSIER>\install-schedule.ps1"
+     ```
    - Le script se relance automatiquement en **mode administrateur** si nécessaire.
    - Supprime toute ancienne tâche `UpdatePowerToysModels`.
    - Crée une nouvelle tâche planifiée pour :
      - 🖱 Exécution à chaque connexion utilisateur
-     - ⏰ Exécution quotidienne à 12h30 et 17h00
+     - ⏰ Exécution quotidienne à 17h00
 3. La tâche est visible dans **Planificateur de tâches → Bibliothèque du Plaificateur de tâches** et s'exécute en mode utilisateur normal.
 
 ---
