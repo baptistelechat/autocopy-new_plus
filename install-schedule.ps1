@@ -77,7 +77,7 @@ try {
 
 # --- TRIGGER AT LOGON ---
 $triggers = @()
-$triggers += New-ScheduledTaskTrigger -AtLogOn
+# $triggers += New-ScheduledTaskTrigger -AtLogOn
 
 # --- TRIGGERS DYNAMIQUES ---
 $horaires = Get-Content $triggersFile | Where-Object { $_ -match "^\d{2}:\d{2}$" }  # format HH:mm

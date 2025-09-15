@@ -69,10 +69,11 @@ Exemple :
 Exemple :
 
 ```
+08:30
 12:30
 ```
 
-**Note :** Ces horaires s'ajoutent au déclenchement automatique à la connexion utilisateur. Penser à reancer `install-schedule.ps1` pour appliquer les changements.
+**Note :** Penser à relancer `install-schedule.ps1` pour appliquer les changements.
 
 ---
 
@@ -83,7 +84,7 @@ Exemple :
    - **Option A** : Double-cliquez sur `install-schedule.ps1`
    - **Option B** : Exécutez en PowerShell :
      ```powershell
-     powershell -ExecutionPolicy Bypass -File "<CHEMIN_VERS_LE_DOSSIER>\install-schedule.ps1"
+     pwsh.exe -ExecutionPolicy Bypass -File "<CHEMIN_VERS_LE_DOSSIER>\install-schedule.ps1"
      ```
    - Le script se relance automatiquement en **mode administrateur** si nécessaire.
    - Supprime toute ancienne tâche `UpdatePowerToysModels`.
